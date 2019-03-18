@@ -1,11 +1,11 @@
 # CSS
 CSS es un lenguaje de hojas de estilos para controlar el aspecto de los documentos html.
 
-### Partes de una declaracion css.
+## Partes de una declaracion css.
 ![cli anatomy](./declaration.png)
 Las declaraciones estan formadas por un selector, que es la etiqueta html que refenciamos; la propiedad de css que le queremos aplicar y su valor de la propiedad.
 
-### Maneras de definir valores css.
+## Maneras de definir valores css.
 
 __Dentro de la etiqueta head__
 ```
@@ -28,7 +28,7 @@ Esta opcion es la mas recomendada para escribir css. Para definir un archivo css
 ```
 
 
-### Comentarios
+## Comentarios
 Podemos generar comentarios dentro de nuestro archivo css cubriendo el codigo de la siguiente manera.
 ```
 /*
@@ -40,7 +40,7 @@ body {
 Como pueden observar se comenta a travez de back slash y asterisco.
 
 
-### Como empezar a escribir codigo css.
+## Como empezar a escribir codigo css.
 Cuando empezemos a escribir nuestro codigo css, el mejor enfoque es empezar por los atributos generales de todo nuestro diseño. Empezaremos a escribir los valores globales de estos, como el tipo de fuente, el tamaño de texto, el color mas usado, los tamaños de los titulos, el tamaño de los parrafos, el interlineado de los textos. y siempre agruparemos nuestras declaraciones y nos apoyaremos en los comentarios para poder agrupar estos. Este enfoque sirve para darle un diseño por defecto a cada uno de nuestros elementos con el cual empezar a diseñar. Por ejemplo
 
 ```
