@@ -139,6 +139,11 @@ los selectores mas usados son
 * __:last-child__
 * __:nth-child(n)__
 
+## Sobre escritura de estilos
+Muchas veces, vamos a querer sobre escribir los estilos de alguna etiqueta. Para sobre escribir los estilos de una etiqueta, prevalesera los valores de la seleccion que sea mas especifica. Pero tambien estara el caso cuando estas 2 etiquetas tenga la misma especificidad la que prevalecera sera la que este lineas mas abajo en el documento. Veamos algunos ejemplos.
+
+
+
 ## Enlaces de interes y de lectura obligatoria
 * [selectores](https://developer.mozilla.org/es/docs/Web/CSS/Selectores_CSS)
 * [selectores](https://alligator.io/css/css-selectors/)
