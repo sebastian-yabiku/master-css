@@ -1,4 +1,4 @@
-#Selectores
+# Selectores
 Que son los selectores?. Bueno se habran preguntado como referenciamos los estilos a nuestro html. Asi es, a travez de los selectores podemos capturar un elemento de nuestro html y agregarle estilos. A continuacion veremos todas las formas.
 
 ## La mas basica es referenciar al nombre de la etiqueta.
