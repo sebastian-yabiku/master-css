@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        /*SELECTOR DE TIPO*/
+        body {
+            /* font-family: arial;
+            color: red; */
+        }
+
+        /*selectores*/
+        /* p {
+            font-family: arial;
+            color: black;
+            font-weight: bold;
+        }
+
+        .c-red {
+            color: red;
+        }
+
+        #c-yellow {
+            color: yellow;
+        }
+
+        input {
+            border: 1px solid black;
+            padding: 10px;
+            margin: 0 0 20px;
+        }
+
+        input[disabled] {
+            background: #eaeaea;
+            border-color: #b0b0b0;
+        }
+
+        a {
+            display: block;
+            text-decoration: none;
+        }
+
+        a[href='https://google.com'] {
+            color: red;
+        }
+
+        a[href='https://youtube.com'] {
+            color: brown;
+        }
+
+        a[href='https://facebook.com'] {
+            color: blue;
+        } */
+
+        input {
+            border: 1px solid black;
+            padding: 10px;
+            margin: 20px 0 20px;
+        }
+
+        .adyacentes h2+p {
+            color: red;
+        }
+
+        .general h2~div {
+            color: blue;
+        }
+
+        .anidada>h2 {
+            color: aquamarine;
+        }
+
+        .menu>li>a {
+            color: red;
+        }
+
+        .menu ul a {
+            color: black;
+        }
+
+        a {
+            color: black;
+        }
+
+        a:link {
+            color: rgb(0, 204, 255);
+            /* color: red */
+        }
+
+        a:visited {
+            color: blueviolet;
+        }
+
+        a:hover {
+            color: coral;
+        }
+
+        a:active {
+            color: yellow;
+        }
+
+        *::selection {
+            background: blue;
+            color: white;
+        }
+
+
+        input:focus {
+            border: 1px solid blue;
+            box-shadow: 1px 1px 1px 1px red;
+            outline: 0;
+        }
+
+        .pseudoelementos h3 {
+            position: relative;
+            display: inline-block;
+            padding: 20px 0;
+        }
+
+        .pseudoelementos h3::after {
+            content: '';
+            position: absolute;
+            width: 50%;
+            height: 6px;
+            background: red;
+            left: 0;
+            bottom: 0;
+        }
+
+        .pseudoelementos h3::before {
+            content: '';
+            position: absolute;
+            width: 50%;
+            height: 6px;
+            background: blue;
+            left: 0;
+            top: 0;
+        }
+
+        .pseudoelementos h3:hover::before,
+        .pseudoelementos h3:hover::after {
+            width: 100%;
+        } 
+
+        .pseudoelementos h3::first-letter {
+            font-size: 24px;
+        }
+
+        .pseudoelementos h3::first-line {
+            color: blue;
+        }
+
+        .not p:not(.uno){
+            color: red;
+        }
+
+        .nth {
+            /* display: flex; */
+        }
+        
+        .nth div {
+            background: blue;
+            border: 2px solid grey;
+            color: white;
+            margin-bottom: 10px;
+        }
+
+        /* .nth div:first-child {
+            background: red;
+        }
+
+        .nth div:last-child {
+            background: red;
+        } */
+
+        .nth div:nth-child(3),
+        .nth div:nth-child(7) {
+            background: red;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!--HERENCIA-->
+    <!-- <div>
+        <h1>
+            titulo
+        </h1>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid id quasi eius maxime modi natus porro
+            consectetur saepe. Sit, distinctio. Aliquid vero incidunt corrupti sint nostrum ad deserunt voluptas a.
+        </p>
+        <ul>
+            <li><a href="">1</a></li>
+            <li><a href="">2</a></li>
+            <li><a href="">3</a></li>
+            <li><a href="">4</a></li>
+            <li><a href="">5</a></li>
+        </ul>
+    </div> -->
+
+
+    <!--SELECTORES-->
+    <!-- <div class="bloque">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima quia similique rem nihil laudantium odit
+            velit nisi accusantium sequi voluptatibus architecto, perferendis nostrum eveniet, nesciunt animi dolore
+            beatae ex illum!</p>
+        <p class="c-red">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima quia similique rem nihil
+            laudantium odit velit nisi accusantium sequi voluptatibus architecto, perferendis nostrum eveniet, nesciunt
+            animi dolore beatae ex illum!</p>
+        <p class="c-red">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima quia similique rem nihil
+            laudantium odit velit nisi accusantium sequi voluptatibus architecto, perferendis nostrum eveniet, nesciunt
+            animi dolore beatae ex illum!</p>
+        <p class="c-red">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima quia similique rem nihil
+            laudantium odit velit nisi accusantium sequi voluptatibus architecto, perferendis nostrum eveniet, nesciunt
+            animi dolore beatae ex illum!</p>
+    </div>
+
+    <header id="header">
+
+    </header>
+    <main id="main">
+        <a href="https://google.com">google.com</a>
+        <a href="https://youtube.com">youtube.com</a>
+        <a href="https://facebook.com">facebook.com</a>
+        <div>
+            <input type="text">
+        </div>
+        <div>
+            <input type="text" disabled>
+        </div>
+        <div>
+            <input type="text">
+        </div>
+        <div>
+            <input type="text">
+        </div>
+    </main>
+    <footer id="footer">
+    </footer> -->
+
+
+
+    <!--SELECTORES COMBINADORES-->
+    <div>
+        <h2>Adyacentes a + b</h2>
+        <div class="adyacentes">
+            <h2>hermano 1</h2>
+            <p>hermano 2</p>
+        </div>
+        <br>
+        <div class="adyacentes">
+            <h2>hermano</h2>
+            <p>hermano 2</p>
+            <h2>hermano 1</h2>
+        </div>
+    </div>
+    <br><br>
+    <div>
+        <h2>Combinador general</h2>
+        <div class="general">
+            <h2>Hermano</h2>
+            <div>uno</div>
+            <p>parra</p>
+            <div>dos</div>
+            <div>tres
+                <div>tres anidado</div>
+            </div>
+        </div>
+    </div>
+    <br><br>
+    <div>
+        <h2>Combinador anidada</h2>
+        <div class="anidada">
+            <h2>uno</h2>
+            <div>
+                <h2>hola</h2>
+            </div>
+
+
+            <ul class="menu">
+                <li><a href="">uno</a></li>
+                <li>
+                    <a href="">dos</a>
+                    <ul>
+                        <li>
+                            <a href="">submenu1</a>
+                        </li>
+                        <li>
+                            <a href="">submenu2</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="">tres</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <div>
+        <h2>Pseudoclases</h2>
+        <div>
+            <div>
+                <a href="https://youtube.com">pseudoclase link</a>
+            </div>
+            <input type="text">
+        </div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <div>
+        <h2>PseudoElementos</h2>
+        <div class="pseudoelementos">
+         <h3>
+             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe nobis quidem incidunt facere, tempore aperiam mollitia repudiandae accusamus blanditiis excepturi reprehenderit consequuntur laboriosam earum cum in architecto voluptatem unde voluptatum!
+         </h3>
+            
+        </div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <div>
+        <h2>Not</h2>
+        <div class="not">
+            <p class="uno">uno</p>
+            <p>dos</p>
+            <p>tres</p>
+            <p>cuatro</p>
+        </div>
+    </div>
+
+    <div>
+        <h2>NthCHILD</h2>
+        <div class="nth">
+            <div>uno</div>
+            <div>dos</div>
+            <div>tres</div>
+            <div>cuatro</div>
+            <div>cinco</div>
+            <div>seis</div>
+            <div>siete</div>
+            <div>ocho</div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
