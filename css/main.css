@@ -1,0 +1,28 @@
+body {
+    color: aquamarine;
+}
+
+p {
+    color: blueviolet!important;
+}
+
+body p.rojo {
+    color: coral;
+}
+
+#yellow {
+    color: yellow;
+}
+
+.rojo {
+    color: red;
+}
+
+
+
+
+
+
+
+
+
